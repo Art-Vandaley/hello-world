@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fibonacci</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../style/main.css" rel="stylesheet" />
+    <script>
+      function fibonacci(num) {
+        if (num <= 1) return 1;
+
+        return fibonacci(num - 1) + fibonacci(num - 2);
+      }
+
+      const showFibonacci = () => {
+        document.querySelector(".number").textContent = fib;
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Fibonacci number</h1>
+    <p>The 42nd fibonacci number is:</p>
+    <p class="number">calculating...</p>
+    <script>
+      fib = fibonacci(42);
+      showFibonacci();
+    </script>
+     <script src="../../js/main.js"></script>
+  </body>
+</html>
